@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/linfengwang/.android/build-cache/202cca0e6df29b0e6d4ba8aa131f72e0f2c2253c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6cfcbdb6722f75e24fea27967468e858d6b486c4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b1772ac46ed3846238cbe74ee308ac7758d8de3">
+        <dex dex="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d68146c26424a66acc78ab2c9bafcd9615af44ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b8143d5d5c8d44cc4ff4cd279a1766a4d29a3f1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/linfengwang/.android/build-cache/1998ffc28ca0b09ede1f3a94c5de4c752accc089/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4df9ae4705e077a6c3d72bbd58180c3752cfa755/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/linfengwang/.android/build-cache/306890c5f63a02ee2ccd7237d6c13aa2b49cbfc2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/linfengwang/AndroidStudioProjects/ForumISEP/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7f2add17ebf1c11d23dd9d0b50605f07da7681ae/classes.dex" />
+    </item>
+
+</items>
