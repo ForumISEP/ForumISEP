@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:lines="2"
-        android:text="Welcome to Forum of ISEP\n Choose your area\n"
+        android:text="Welcome to ISEP Forums \n Post your offer and get your ideal candidates\n "
         android:textSize="20sp"
         android:textColor="@color/colorText"
         android:gravity="center"
@@ -25,28 +25,40 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="19dp" />
 
-    <Button
-        android:id="@+id/btnStudent"
+    <EditText
+        android:id="@+id/etName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:hint="Student area"
+        android:hint="Name"
         android:textSize="16sp"
         android:textColorHint="#42ebf4"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/btnEntreprise"
-        android:layout_alignStart="@+id/btnEntreprise"
-        android:layout_alignRight="@+id/btnEntreprise"
-        android:layout_alignEnd="@+id/btnEntreprise" />
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_alignRight="@+id/etPassword"
+        android:layout_alignEnd="@+id/etPassword" />
 
-    <Button
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:textSize="16sp"
-        android:id="@+id/btnEntreprise"
-        android:hint="Entreprise area"
+        android:id="@+id/etPassword"
+        android:hint="Password"
         android:textColorHint="#42ebf4"
         android:layout_marginTop="25dp"
         android:layout_below="@+id/etName"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:id="@+id/btnlogin"
+        android:background="#26A69A"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
 </RelativeLayout>
+
