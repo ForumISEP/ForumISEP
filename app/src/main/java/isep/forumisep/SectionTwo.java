@@ -40,7 +40,7 @@ public class SectionTwo extends Fragment {
 
             @Override
             public void onClick(View arg0) {
-                Intent intent = new Intent(getActivity(), HomeActivity.class);
+                Intent intent = new Intent(getActivity(), GalleryActivity.class);
                 startActivity(intent);
             }
         });
