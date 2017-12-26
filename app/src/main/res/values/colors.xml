@@ -6,7 +6,7 @@
     <color name="colorBackground">#86C1D4</color>
     <color name="colorText">#44FADD</color>
     <color name="colorTextHint">#86C1D4</color>
-    <color name="btnMain">#019081</color>
-    <color name="btnSecond">#74CC7E</color>
+    <color name="btnMain">#5d95ea</color>
+    <color name="btnSecond">#66d0d7</color>
 </resources>
 

@@ -5,4 +5,29 @@ package isep.forumisep;
  */
 
 public class Entreprise {
+    private String title,genre,year;
+    private String date;
+    private String name;
+    private String etat;
+
+    public Entreprise(){
+    }
+
+    public Entreprise(String name,String etat,String date){
+        this.name=name;
+        this.date=date;
+        this.etat=etat;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEtat() {
+        return etat;
+    }
 }

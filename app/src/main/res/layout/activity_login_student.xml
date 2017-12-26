@@ -26,38 +26,39 @@
         android:layout_marginTop="19dp" />
 
     <EditText
-        android:id="@+id/etName"
+        android:id="@+id/stuName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:hint="Name"
+        android:inputType="text"
+        android:hint="@string/name"
         android:textSize="16sp"
         android:textColorHint="#42ebf4"
         android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/etPassword"
-        android:layout_alignStart="@+id/etPassword"
-        android:layout_alignRight="@+id/etPassword"
-        android:layout_alignEnd="@+id/etPassword" />
+        android:layout_alignLeft="@+id/stuPassword"
+        android:layout_alignStart="@+id/stuPassword"
+        android:layout_alignRight="@+id/stuPassword"
+        android:layout_alignEnd="@+id/stuPassword" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:textSize="16sp"
-        android:id="@+id/etPassword"
-        android:hint="Password"
+        android:id="@+id/stuPassword"
+        android:hint="@string/password"
         android:textColorHint="#42ebf4"
         android:layout_marginTop="25dp"
-        android:layout_below="@+id/etName"
+        android:layout_below="@+id/stuName"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LOGIN"
-        android:id="@+id/btnlogin"
-        android:background="#26A69A"
-        android:layout_below="@+id/etPassword"
+        android:id="@+id/btnStuLogin"
+        android:background="@color/btnMain"
+        android:layout_below="@+id/stuPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp" />
 </RelativeLayout>

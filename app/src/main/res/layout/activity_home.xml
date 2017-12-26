@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@mipmap/isep" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        android:text="Welcome to Forum of ISEP\n Choose your area\n"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <Button
+        android:id="@+id/btnStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Student area"
+        android:background="@color/btnMain"
+        android:textSize="16sp"
+        android:textColorHint="#42ebf4"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/btnEntreprise"
+        android:layout_alignStart="@+id/btnEntreprise"
+        android:layout_alignRight="@+id/btnEntreprise"
+        android:layout_alignEnd="@+id/btnEntreprise" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:id="@+id/btnEntreprise"
+        android:hint="Entreprise area"
+        android:background="@color/btnMain"
+        android:textColorHint="#42ebf4"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btnStudent"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
