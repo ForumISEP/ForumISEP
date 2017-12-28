@@ -61,5 +61,17 @@
         android:layout_below="@+id/stuPassword"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/btnLinkToRegisterScreen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text="@string/btn_link_to_register"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnStuLogin"
+        android:textSize="15dp" />
 </RelativeLayout>
 

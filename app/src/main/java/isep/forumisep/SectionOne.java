@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 public class SectionOne extends Fragment {
 
     public SectionOne() {
+
     }
 
     @Override

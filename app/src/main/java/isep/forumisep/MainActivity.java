@@ -14,10 +14,6 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by linfengwang on 26/12/2017.
- */
-
 public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private TabLayout tabLayout;
@@ -59,9 +55,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViewPager(ViewPager viewPager) {
+
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+
         adapter.addSection(new SectionOne(), "Offer");
         adapter.addSection(new SectionTwo(), "Entreprise");
+
         viewPager.setAdapter(adapter);
     }
 
@@ -76,11 +75,13 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
+
             return myFragmentList.get(position);
         }
 
         @Override
         public int getCount() {
+
             return myFragmentList.size();
         }
 
@@ -91,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public CharSequence getPageTitle(int position) {
+
             return myFragmentTitleList.get(position);
         }
     }
-
 }
