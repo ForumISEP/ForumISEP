@@ -5,7 +5,7 @@ package isep.forumisep;
  */
 
 public class Entreprise {
-    private String title,genre,year;
+
     private String date;
     private String name;
     private String etat;

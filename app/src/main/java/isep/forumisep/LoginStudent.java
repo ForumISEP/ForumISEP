@@ -36,7 +36,7 @@ public class LoginStudent extends Activity {
                     if (stuNameString.equals("test") && stuPasswordString.equals("test")) {
 
                         Intent registerIntent = new Intent(LoginStudent.this, RecyclerActivity.class);
-                        LoginStudent.this.startActivity(registerIntent);
+                        startActivity(registerIntent);
 
                     } else {
                         android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(LoginStudent.this);

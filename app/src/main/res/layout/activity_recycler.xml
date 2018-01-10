@@ -34,13 +34,5 @@
             android:layout_height="wrap_content"
             android:scrollbars="vertical"
             android:maxHeight="?android:attr/actionBarSize"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_below="@id/recycler_view"
-            android:text="Text area"
-            android:layout_marginTop="10dp"
-            android:layout_height="match_parent"/>
-
     </RelativeLayout>
 </LinearLayout>

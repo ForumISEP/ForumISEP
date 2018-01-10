@@ -27,8 +27,8 @@ public class EntrepriseAdapter extends RecyclerView.Adapter<EntrepriseAdapter.My
         }
     }
 
-    public EntrepriseAdapter(List <Entreprise> entrepriseList1){
-        this.entrepriseList = entrepriseList1;
+    public EntrepriseAdapter(List <Entreprise> entrepriseList){
+        this.entrepriseList = entrepriseList;
     }
 
     @Override
@@ -49,6 +49,7 @@ public class EntrepriseAdapter extends RecyclerView.Adapter<EntrepriseAdapter.My
 
     @Override
     public int getItemCount() {
+
         return entrepriseList.size();
     }
 }

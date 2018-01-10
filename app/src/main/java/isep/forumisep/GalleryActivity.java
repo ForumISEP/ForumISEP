@@ -26,8 +26,6 @@ public class GalleryActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         toolbar.setNavigationIcon(R.drawable.ic_perm_identity_black_24dp);
 
-
-
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

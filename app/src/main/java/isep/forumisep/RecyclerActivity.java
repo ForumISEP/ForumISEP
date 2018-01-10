@@ -44,6 +44,8 @@ public class RecyclerActivity extends AppCompatActivity {
             }
         });
 
+
+        //fill in the item;
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         myAdapter = new EntrepriseAdapter(entrepriseList);
