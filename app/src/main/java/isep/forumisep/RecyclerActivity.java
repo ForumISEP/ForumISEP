@@ -77,8 +77,14 @@ public class RecyclerActivity extends AppCompatActivity {
         Entreprise entreprise0 = new Entreprise ("FaceBook","software","2014");
         entrepriseList.add(entreprise0);
 
-        Entreprise entreprise1 = new Entreprise ("Apple","software+hardware","2000");
+        Entreprise entreprise1 = new Entreprise ("Apple","software","2000");
         entrepriseList.add(entreprise1);
+
+        Entreprise entreprise2 = new Entreprise ("IBM","software","2000");
+        entrepriseList.add(entreprise2);
+
+        Entreprise entreprise3 = new Entreprise ("Tweeter","software engineer","2000");
+        entrepriseList.add(entreprise3);
 
         myAdapter.notifyDataSetChanged();
     }

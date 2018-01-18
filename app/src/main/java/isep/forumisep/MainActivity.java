@@ -84,8 +84,8 @@ public class MainActivity extends AppCompatActivity {
             return myFragmentList.size();
         }
 
-        public void addSection(Fragment fragment, String title) {
-            myFragmentList.add(fragment);
+        public void addSection(Fragment section, String title) {
+            myFragmentList.add(section);
             myFragmentTitleList.add(title);
         }
 
