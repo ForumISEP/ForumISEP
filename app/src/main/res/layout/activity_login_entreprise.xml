@@ -27,27 +27,27 @@
 
     <EditText
         android:id="@+id/entrepriseName"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:hint="Name"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:hint="Email"
         android:textSize="16sp"
         android:textColorHint="#42ebf4"
-        android:layout_below="@+id/textView"
-        android:layout_alignLeft="@+id/entreprisePassword"
-        android:layout_alignStart="@+id/entreprisePassword"
-        android:layout_alignRight="@+id/entreprisePassword"
-        android:layout_alignEnd="@+id/entreprisePassword" />
+        android:layout_below="@+id/textView" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
         android:inputType="textPassword"
         android:textSize="16sp"
         android:id="@+id/entreprisePassword"
         android:hint="Password"
         android:textColorHint="#42ebf4"
-        android:layout_marginTop="25dp"
         android:layout_below="@+id/entrepriseName"
         android:layout_centerHorizontal="true" />
 

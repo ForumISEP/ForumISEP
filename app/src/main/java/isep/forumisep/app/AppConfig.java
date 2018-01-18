@@ -6,7 +6,7 @@ package isep.forumisep.app;
 
 public class AppConfig {
     //server user login url;
-    public static String URL_LOGIN = "http://46.193.66.28/android_login_api/login.php";
-    public static String URL_REGISTER = "http://46.193.66.28/android_login_api/register.php";
+    public static String URL_LOGIN = "http://10.188.152.224:8888/TestConnDB/Login_page.php";
+    public static String URL_REGISTER = "http://46.193.66.28:8888/TestConnDB/Register_page.php";
 
 }
