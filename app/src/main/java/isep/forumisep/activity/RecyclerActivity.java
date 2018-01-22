@@ -7,8 +7,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.GestureDetector;
 import android.support.v7.widget.Toolbar;
+import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -17,6 +17,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import isep.forumisep.R;
+
+import static isep.forumisep.R.drawable.boss;
 
 public class RecyclerActivity extends AppCompatActivity {
     private Toolbar toolbar;
@@ -30,12 +32,12 @@ public class RecyclerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler);
 
-
+/*
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_perm_identity_black_24dp);
+        toolbar.setNavigationIcon(boss);
 
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,9 +46,11 @@ public class RecyclerActivity extends AppCompatActivity {
                 RecyclerActivity.this.startActivity(registerIntent);
             }
         });
+*/
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
         mAdapter = new EntrepriseAdapter(entrepriseList);
+
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -55,10 +59,10 @@ public class RecyclerActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                Entreprise entreprise = entrepriseList.get(position);
-                Toast.makeText(getApplicationContext(), entreprise.getName() + " is selected", Toast.LENGTH_SHORT).show();
-                Intent mainpageview = new Intent(RecyclerActivity.this, MainActivity.class);
-                startActivity(mainpageview);
+                Entreprise patient = entrepriseList.get(position);
+                Toast.makeText(getApplicationContext(), patient.getName() + " est sélectionné", Toast.LENGTH_SHORT).show();
+                Intent troisiemeactivitee = new Intent(RecyclerActivity.this, MainActivity.class);
+                startActivity(troisiemeactivitee);
             }
 
             @Override
@@ -67,11 +71,13 @@ public class RecyclerActivity extends AppCompatActivity {
             }
         }));
         recyclerView.setAdapter(mAdapter);
-        prepareEntrepriseData();
+        preparePatientData();
     }
 
-    private void prepareEntrepriseData() {
-        Entreprise entreprise = new Entreprise ("FaceBook","software","2014");
+    private void preparePatientData() {
+        Entreprise entreprise = new Entreprise ("Google","software","2014");
+        entrepriseList.add(entreprise);
+        entreprise = new Entreprise ("FaceBook","software","2014");
         entrepriseList.add(entreprise);
         entreprise = new Entreprise ("Apple","software","2000");
         entrepriseList.add(entreprise);
@@ -79,6 +85,7 @@ public class RecyclerActivity extends AppCompatActivity {
         entrepriseList.add(entreprise);
         entreprise = new Entreprise ("Tweeter","software engineer","2000");
         entrepriseList.add(entreprise);
+
         mAdapter.notifyDataSetChanged();
     }
     public interface ClickListener {

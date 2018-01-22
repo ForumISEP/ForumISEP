@@ -9,11 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-/**
- * Created by linfengwang on 26/12/2017.
- */
 
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
+
     private static final int[] ATTRS = new int[]{
             android.R.attr.listDivider
     };
@@ -39,7 +37,6 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
         }
         mOrientation = orientation;
     }
-
 
     @Override
     public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
@@ -90,5 +87,4 @@ public class DividerItemDecoration extends RecyclerView.ItemDecoration {
             outRect.set(0, 0, mDivider.getIntrinsicWidth(), 0);
         }
     }
-
 }

@@ -28,7 +28,7 @@ import isep.forumisep.helper.SQLiteHandler;
 import isep.forumisep.helper.SessionManager;
 
 /**
- * Created by linfengwang on 01/12/2017.
+ * Created by linfengwang on 03/11/2017.
  */
 
 public class RegisterStudent extends Activity {
@@ -97,6 +97,7 @@ public class RegisterStudent extends Activity {
             }
         });
     }
+
     private void registerUser(final String email,
                               final String password) {
         // Tag used to cancel the request
@@ -170,6 +171,7 @@ public class RegisterStudent extends Activity {
         // Adding request to request queue
         AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
     }
+
     private void showDialog() {
         if (!pDialog.isShowing())
             pDialog.show();

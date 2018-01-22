@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
 import isep.forumisep.R;
 
 /**
@@ -14,6 +13,9 @@ import isep.forumisep.R;
  */
 
 public class LoginStudent extends Activity {
+
+    Button btnStuLogin,btnStuRegister;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -22,9 +24,9 @@ public class LoginStudent extends Activity {
 
         final EditText stuMail = (EditText)findViewById(R.id.stuMail);
         final EditText stuPassword = (EditText)findViewById(R.id.stuPassword);
-        final Button btnStuRegister = (Button)findViewById(R.id.btnLinkToRegisterScreen);
+        btnStuRegister = (Button)findViewById(R.id.btnLinkToRegisterScreen);
 
-        Button btnStuLogin = (Button)findViewById(R.id.btnStuLogin);
+        btnStuLogin = (Button)findViewById(R.id.btnStuLogin);
 
         btnStuLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +56,9 @@ public class LoginStudent extends Activity {
         btnStuRegister.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent registerStudent = new Intent(getApplicationContext(),RegisterStudent.class);
+                Intent registerStudent = new Intent(LoginStudent.this, RegisterStudent.class);
                 startActivity(registerStudent);
             }
         });
-}}
+    }
+}

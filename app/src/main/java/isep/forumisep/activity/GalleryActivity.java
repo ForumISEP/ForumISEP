@@ -26,7 +26,7 @@ public class GalleryActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        toolbar.setNavigationIcon(R.drawable.ic_perm_identity_black_24dp);
+        toolbar.setNavigationIcon(R.drawable.boss);
 
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,9 +43,9 @@ public class GalleryActivity extends AppCompatActivity {
 
         switch (v.getId())
         {
-            case R.id.image1: im.setImageResource(R.drawable.ic_face_black_48dp);
+            case R.id.image1: im.setImageResource(R.drawable.google);
                 break;
-            case R.id.image2: im.setImageResource(R.drawable.ic_face_black_48dp);
+            case R.id.image2: im.setImageResource(R.drawable.google);
                 break;
         }
     }

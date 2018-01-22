@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sdzName="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <sdzName.ChessBoardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        sdzName:colorOne="#FF0000"
+        sdzName:colorTwo="#00FF00">
+    </sdzName.ChessBoardView>
+</LinearLayout>

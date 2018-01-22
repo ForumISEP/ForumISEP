@@ -31,5 +31,8 @@
     <string name="welcome">Welcome</string>
     <string name="btn_logout">LOGOUT</string>
 
-
+    <declare-styleable name="ChessBoardView">
+        <attr name="colorOne" format="color"></attr>
+        <attr name="colorTwo" format="color"></attr>
+        </declare-styleable>>
 </resources>

@@ -12,10 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:clickable="false"
+        android:background="#3F51B5"
         android:minHeight="?android:attr/actionBarSize"
-        android:text="Offer area"
-        android:titleTextColor="@color/colorText">
+        android:clickable="false">
 
     </android.support.v7.widget.Toolbar>
 

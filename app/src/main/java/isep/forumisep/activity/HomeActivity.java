@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         btnStudient.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                Intent studentIntent = new Intent(getApplicationContext(),LoginStudent.class);
+                Intent studentIntent = new Intent(getApplicationContext(),Echiquier_VuePersonnalisee.class);
                 startActivity(studentIntent);
             }
         });

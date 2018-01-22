@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,20 +16,21 @@ import java.util.List;
 import isep.forumisep.R;
 
 public class MainActivity extends AppCompatActivity {
+
     private Toolbar toolbar;
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private int[] tabIcons = {
-            R.drawable.ic_perm_identity_black_24dp,
-            R.drawable.ic_picture_in_picture_black_24dp,
-            R.drawable.ic_forum_black_24dp,
-    };
+            R.drawable.boss,
+            R.drawable.profile,
+            R.drawable.boss,
 
+    };
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/*
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
+*/
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
@@ -57,18 +57,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViewPager(ViewPager viewPager) {
-
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-
-        adapter.addSection(new SectionOne(), "Offer");
-        adapter.addSection(new SectionTwo(), "Entreprise");
-
+        adapter.addFragment(new SectionOne(), "Offer");
+        adapter.addFragment(new SectionTwo(), "Personal INFO");
         viewPager.setAdapter(adapter);
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
-        private final List<Fragment> myFragmentList = new ArrayList<>();
-        private final List<String> myFragmentTitleList = new ArrayList<>();
+        private final List<Fragment> mFragmentList = new ArrayList<>();
+        private final List<String> mFragmentTitleList = new ArrayList<>();
 
         public ViewPagerAdapter(FragmentManager manager) {
             super(manager);
@@ -76,25 +73,22 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-
-            return myFragmentList.get(position);
+            return mFragmentList.get(position);
         }
 
         @Override
         public int getCount() {
-
-            return myFragmentList.size();
+            return mFragmentList.size();
         }
 
-        public void addSection(Fragment section, String title) {
-            myFragmentList.add(section);
-            myFragmentTitleList.add(title);
+        public void addFragment(Fragment fragment, String title) {
+            mFragmentList.add(fragment);
+            mFragmentTitleList.add(title);
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
-
-            return myFragmentTitleList.get(position);
+            return mFragmentTitleList.get(position);
         }
     }
 }

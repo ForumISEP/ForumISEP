@@ -3,96 +3,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.rapha.loginregister.OneFragment"
+    tools:context=".activity.MainActivity"
     android:background="#E8EAF6">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Nom:"
+        android:text="Position:software"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/position"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
-        android:text="Prénom:" />
+        android:id="@+id/positiontype"
+        android:layout_below="@+id/position"
+        android:layout_alignRight="@+id/position"
+        android:layout_alignEnd="@+id/position"
+        android:text="Type:CDI" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:layout_below="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
-        android:text="Age:" />
+        android:id="@+id/city"
+        android:layout_below="@+id/positiontype"
+        android:layout_alignRight="@+id/positiontype"
+        android:layout_alignEnd="@+id/positiontype"
+        android:text="HR:hr@google.com" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_toLeftOf="@+id/editText"
+        android:layout_toLeftOf="@+id/city"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:src="@drawable/ic_face_black_48dp"
-        android:layout_alignBottom="@+id/editText5" />
+        android:src="@drawable/google"
+        android:layout_alignBottom="@+id/require" />
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/editText5"
-        android:layout_below="@+id/editText3"
+        android:id="@+id/require"
+        android:layout_below="@+id/city"
         android:layout_toRightOf="@+id/imageView"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
-        android:text="Adresse:" />
+        android:layout_alignRight="@+id/city"
+        android:layout_alignEnd="@+id/city"
+        android:text="Starting time: Février 2018" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText6"
-        android:text="Hôpital:"
-        android:layout_marginTop="49dp"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/editText5"
-        android:layout_alignEnd="@+id/editText5" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText7"
-        android:text="Allergie:"
-        android:layout_below="@+id/editText6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText8"
-        android:text="Sécurité sociale:"
-        android:layout_below="@+id/editText7"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/editText5"
-        android:layout_alignEnd="@+id/editText5" />
 
 </RelativeLayout>
 

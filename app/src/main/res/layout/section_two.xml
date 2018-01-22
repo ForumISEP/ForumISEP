@@ -3,13 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="isep.forumisep.TwoSection"
+    tools:context="isep.forumisep.activity.MainActivity"
     android:background="#E8EAF6">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Modifier Compte-Rendu"
+        android:text="Motivation letter"
         android:id="@+id/button3"
         android:background="#E91E63"
         android:layout_below="@+id/button2"
@@ -22,7 +22,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consulter compte-rendu "
+        android:text="Check your motivation letter"
         android:id="@+id/button4"
         android:background="#26A69A"
         android:layout_marginTop="68dp"
@@ -35,7 +35,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Radiographie"
+        android:text="CV"
         android:id="@+id/button2"
         android:background="#26A69A"
 
